@@ -1,4 +1,4 @@
-class business:
+class Business:
 
 
     def __init__(self, name, franchises ):
