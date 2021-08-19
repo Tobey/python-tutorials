@@ -8,27 +8,19 @@ from basic_operations._xh import check_solution
 write function to count a string
 """
 def count_a_string(input):
-
+    return
 """
 write function to count a string
 """
 def count_a_list(input):
-    print("my input is\n", input)
-    x=len(input)
-    print("my answer is \n", x)
-    return x
+    pass
 
 
 """
 write a function to reverse a list
 """
-def reverse_a_list(input:list):
-    print("my input is", input)
-    input.reverse()
-    print("my output is", input)
-
-    return input
-
+def reverse_a_list(input):
+    pass
 
 
 """
