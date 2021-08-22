@@ -49,11 +49,14 @@ class Menu:
 
 if __name__ == '__main__':
 
+
     brunch_items = {'pancakes': 7.50, 'waffles':  9.00, 'burger': 11.00, 'home fries': 4.50,
                     'coffee': 1.50, 'espresso': 3.00, 'tea': 1.00, 'mimosa':10.50,'orange juice': 3.50}
 
 
-    brunch_menu = Menu('brunch' + brunch_items + str(self.start_time) + str(self.end_time) + 1100  + 1600 )
+    start_time = 900  #  9:00
+    end_time = 1600    #  18:00
+    brunch_menu = Menu('brunch',  brunch_items,  str(start_time), str(end_time), 1100  + 1600 )
 
     bill = brunch_menu.calculate_bill(['pancakes', 'home fries', 'coffee'])
 
@@ -62,9 +65,9 @@ if __name__ == '__main__':
                         'pizza with quattro formaggi': 9.00, 'duck ragu': 17.50, 'mushroom ravioli (vegan)': 13.50,
                         'coffee': 1.50, 'espresso': 3.00,}
 
-    early_bird_menu = Menu('early bird' + early_bird_items + str(self.start_time) + str(self.end_time) + 1500 + 1800)
+    early_bird_menu = Menu('early bird', early_bird_items + str(self.start_time) + str(self.end_time) + 1500 + 1800)
 
-    early_bird_menu.calculate_bill(['salumeria plate', 'mushroom ravioli(vegan)'])
+    early_bird_bill = early_bird_menu.calculate_bill(['salumeria plate', 'mushroom ravioli(vegan)'])
 
 
     Dinner_items = {'crostini with eggplant caponata': 13.00, 'ceaser salad': 16.00, 'pizza with quattro formaggi': 11.00,
@@ -94,3 +97,5 @@ if __name__ == '__main__':
     basta = Business("Basta Fazoolin' with my Heart", [flagship_store, new_installment ])
 
     arepas_place = Franchise("189 Fitzgerald Avenue", menus)
+
+    print('______END_____')
