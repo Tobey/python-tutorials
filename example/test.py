@@ -15,6 +15,4 @@ class TestMyExampleClass(TestCase):
         my_business = Business("Another Software Company", None)
         self.assertEqual(my_business.name, "Another Software Company")
 
-    # def test_something_else(self):
-    #     self.assertTrue(False)
-
+    
