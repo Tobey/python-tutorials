@@ -19,20 +19,3 @@ class TestMyExampleClass(TestCase):
     # def test_something_else(self):
     #     self.assertTrue(False)
 
-    def test_menu_setup(self):
-
-
-        # early_bird_bill = menu.calculate_bill(['sojlrfjodnjksvnk'])
-        # self.assertEqual(early_bird_bill, 0)
-        #
-        # early_bird_bill = menu.calculate_bill(['sojlrfjodnjksvnk'])
-        # self.assertEqual(early_bird_bill, 0)
-        # early_bird_bill = menu.calculate_bill(['sojlrfjodnjksvnk'])
-        # self.assertEqual(early_bird_bill, 0)
-        # early_bird_bill = menu.calculate_bill(['sojlrfjodnjksvnk'])
-        # self.assertEqual(early_bird_bill, 0)
-        # early_bird_bill = menu.calculate_bill(['sojlrfjodnjksvnk'])
-        # self.assertEqual(early_bird_bill, 0)
-        #
-        # early_bird_bill = menu.calculate_bill(['sojlrfjodnjksvnk'])
-        # self.assertEqual(early_bird_bill, 0)
