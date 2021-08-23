@@ -15,19 +15,21 @@ class Franchise:
     def __repr__(self):
         return self.address
 
-    def available_menus(self, time):
+    def available_menus(self, time: int):
 
         available_menu = []
 
         for menu in self.menus:
-            if menu.start_time <= time <= menu:
+            print('menu.start_time', menu.start_time, type(menu.start_time))
+            print('menu', menu, type(menu))
+            if int(menu.start_time) <= time <= int(menu.end_time):
                 available_menu.append(menu)
 
             return available_menu
 
 
 class Menu:
-    def __init__(self, name, items, start_time, end_time):
+    def __init__(self, name:str, items:dict, start_time:str, end_time:str):
         self.name = name
         self.items = items
         self.start_time = start_time
