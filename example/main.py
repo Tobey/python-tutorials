@@ -48,13 +48,25 @@ class Menu:
 
 if __name__ == '__main__':
 
+<<<<<<< HEAD
     start_time = ""
     end_time = ""
+=======
+
+    brunch_items = {'pancakes': 7.50, 'waffles':  9.00, 'burger': 11.00, 'home fries': 4.50,
+                    'coffee': 1.50, 'espresso': 3.00, 'tea': 1.00, 'mimosa':10.50,'orange juice': 3.50}
+>>>>>>> test419
 
     brunch_items = {'pancakes': 7.50, 'waffles':  9.00, 'burger': 11.00, 'home fries': 4.50,
                     'coffee': 1.50, 'espresso': 3.00, 'tea': 1.00, 'mimosa': 10.50,'orange juice': 3.50}
 
+<<<<<<< HEAD
     brunch_menu = Menu('brunch', brunch_items, str(start_time), str(end_time))
+=======
+    start_time = 900  #  9:00
+    end_time = 1600    #  18:00
+    brunch_menu = Menu('brunch',  brunch_items,  str(start_time), str(end_time), 1100  + 1600 )
+>>>>>>> test419
 
     bill = brunch_menu.calculate_bill(['pancakes', 'home fries', 'coffee'])
 
@@ -62,7 +74,11 @@ if __name__ == '__main__':
                         'pizza with quattro formaggi': 9.00, 'duck ragu': 17.50, 'mushroom ravioli (vegan)': 13.50,
                         'coffee': 1.50, 'espresso': 3.00}
 
+<<<<<<< HEAD
     early_bird_menu = Menu('early bird', early_bird_items, str(start_time), str(end_time))
+=======
+    early_bird_menu = Menu('early bird', early_bird_items + str(self.start_time) + str(self.end_time) + 1500 + 1800)
+>>>>>>> test419
 
     early_bird_bill = early_bird_menu.calculate_bill(['salumeria plate', 'mushroom ravioli(vegan)'])
 
@@ -94,4 +110,9 @@ if __name__ == '__main__':
 
     arepas_place = Franchise("189 Fitzgerald Avenue", Menu, 12.00)
 
+<<<<<<< HEAD
+=======
+    arepas_place = Franchise("189 Fitzgerald Avenue", menus)
+
+>>>>>>> test419
     print('______END_____')
