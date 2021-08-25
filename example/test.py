@@ -1,9 +1,10 @@
 import unittest
-import Calc
+
 from unittest import TestCase
 import Calc
 
-class TestCalc(unittest.Tastcase):
+
+class TestCalc(TestCase):
 
     def test_add(self):
         Calc.add(10, 5)
