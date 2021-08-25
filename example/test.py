@@ -3,11 +3,11 @@ import Calc
 from unittest import TestCase
 import Calc
 
-class TestCal(unittest.Tastcase):
+class TestCalc(unittest.Tastcase):
 
     def test_add(self):
-        result = Calc.add(10, 5)
-        self.assertEqual(result, 15)
+        Calc.add(10, 5)
+        self.assertEqual(Calc.add(10, 5), 15)
 
 
 if __name__ == '__main__':
