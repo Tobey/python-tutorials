@@ -1,5 +1,5 @@
 import unittest
-from calc.employee import Employee
+from employee import Employee
 
 class TestEmployee(unittest.TestCase):
 
