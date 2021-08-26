@@ -9,6 +9,7 @@ class Employee:
 
     @property
     def email(self):
+
         return '{}.{}@email.com'.format(self.first, self.last)
 
     @property
@@ -16,6 +17,4 @@ class Employee:
         return '{} {}'.format(self.first, self.last)
 
     def apply_raise(self):
-        self.pay  = int(self.pay * self.raise_amt)
-
-
+        self.pay = int(self.pay * self.raise_amt)
